@@ -1,0 +1,43 @@
+#!/bin/bash
+
+NAME=`basename $0`
+
+export LOCK=/tmp/$NAME.lock
+
+if [ -e $LOCK ]; then
+  export TARGET=`<$LOCK`
+
+  if [ -e $TARGET ]; then
+    OPEN=`lsof | grep $TARGET | grep Preview`
+    if [ -z "$OPEN" ]; then
+      export TARGET=
+      rm $LOCK
+    fi
+  fi
+else
+  export TARGET=
+fi
+
+if [ -z $TARGET ]; then
+  export TARGET=~/Desktop/$NAME-`date +%Y-%m-%y-%H-%M-%S`.pdf
+  echo $TARGET > $LOCK
+fi
+
+export TMP=`mktemp /tmp/bcscan.XXXXXXXXXX`
+
+scanimage -l 0 -t 0 -x 215 -y 297 --format tiff --resolution 200 --mode Lineart > $TMP.tif
+sips -s format pdf $TMP.tif --out $TMP.pdf > /dev/null
+rm $TMP.tif
+
+if [ -e $TARGET ]; then
+  "/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py" \
+    -o $TARGET.tmp \
+    $TARGET \
+    $TMP.pdf
+  rm $TMP.pdf
+  mv $TARGET.tmp $TARGET
+else
+  mv $TMP.pdf $TARGET
+fi
+open -a Preview $TARGET
+
