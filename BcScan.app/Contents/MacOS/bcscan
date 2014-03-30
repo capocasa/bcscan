@@ -25,7 +25,7 @@ fi
 
 export TMP=`mktemp /tmp/bcscan.XXXXXXXXXX`
 
-scanimage -l 0 -t 0 -x 215 -y 297 --format tiff --resolution 200 --mode Lineart > $TMP.tif
+/usr/local/bin/scanimage -l 0 -t 0 -x 215 -y 297 --format tiff --resolution 200 --mode Lineart > $TMP.tif
 sips -s format pdf $TMP.tif --out $TMP.pdf > /dev/null
 rm $TMP.tif
 
