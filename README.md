@@ -25,5 +25,7 @@ Click the BcScan Icon. Your scanner will scan a document in Fax quality immediat
 Rationale
 ---------
 
-Frankly, most scan apps blow smoke when it comes to just scanning a bunch of pages into PDF. Used to simple-scan on linux, I was apalled at the lack of something comparable for OSX. So I sat down a couple hours and wrote one.
+Most scanning apps for OSX require a preview scan, which takes too much time when scanning a lot of documents. To go paperless it works better to have something that works a little more like a fax machine or photocopier. Linux has simple-scan, but OSX seemed to be lacking anything comparable. As a bonus, the scanning process is much faster due to the sane drivers used.
+
+
 
