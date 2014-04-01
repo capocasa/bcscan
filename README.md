@@ -15,9 +15,12 @@ Installation
 
 Install the SANE OSX drivers
 
- * libusb for OSX
- * sane-backends for OSX
- * Sane Twain Driver for OSX
+ * libusb for OSX [Download](http://capocasa.net/osx-sane-wrangler/?tool=libusb)
+ * sane-backends for OSX [Download](http://capocasa.net/osx-sane-wrangler/?tool=sane-backends)
+ * SANE-Preference-Pane for OSX [Download](http://capocasa.net/osx-sane-wrangler/?tool=SANE-Preference-Pane)
+ * TWAIN-SANE-Interface for OSX [Download](http://capocasa.net/osx-sane-wrangler/?tool=TWAIN-SANE-Interface)
+
+You need to go through the install wizard for each of these. Faster scans are worth it though!
 
 Test your drivers
 
