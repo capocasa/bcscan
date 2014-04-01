@@ -30,7 +30,7 @@ Test your drivers
 
 Install BcScan
 
-  1. Download BcScan.dmg and open it
+  1. [Download BcScan.dmg](BcScan.dmg?raw=true) and open it
   2. Drag the BcScan app to your Programs folder
   3. Optionally, the BcScan App to your Dock
 
