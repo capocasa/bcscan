@@ -1,7 +1,7 @@
 BcScan
 ======
 
-BcScan is a simple OSX scanner app to scan several pages worth of paper documents into a multi page PDF on your desktop. It's fast!
+BcScan is a simple OSX scanner app to scan paper documents into a PDF file. It does Fax quality only, but scans faster, and results smaller PDF files.
 
 Requirements
 ------------
@@ -55,7 +55,10 @@ Usage
   7. Close Preview _The scan with all the pages will be placed in a PDF file on your Desktop named BcScan-2011-01-01-12-00-00.pdf (with the current time and date)_
   8. Optional: Rename the newly scanned multi-page PDF file to something useful, and move it somewhere that makes sense.
 
-No settings, no preview scan, fast document scanning. No scanning pictures either, the _Digitial Images_ App that comes with OSX is fine for that.
+Limitations
+-----------
+
+BcScan scans documents to small-sized PDF files in Fax quality fast, and that's it. That is by design. The _Digital Images_ app that comes with OSX is suggested for scanning photos, or anything that requires fine-tuning settings.
 
 Rationale
 ---------
