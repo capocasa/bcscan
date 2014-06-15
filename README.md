@@ -32,7 +32,7 @@ You need to go through the install wizard for each of these. Faster scans are wo
 
   1. [Download BcScan.dmg](BcScan.dmg?raw=true) and open it
   2. Drag the BcScan app to your Programs folder
-  3. Optionally, the BcScan App to your Dock
+  3. Optionally, place the BcScan App to your Dock
 
 Usage
 -----
