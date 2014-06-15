@@ -13,7 +13,7 @@ Additionally, your scans will likely be much faster than with ordinary drivers, 
 Installation
 ------------
 
-Install the SANE OSX drivers
+**1. Install the SANE OSX drivers**
 
  * libusb for OSX [Download](http://capocasa.net/osx-sane-wrangler/?tool=libusb)
  * sane-backends for OSX [Download](http://capocasa.net/osx-sane-wrangler/?tool=sane-backends)
@@ -22,13 +22,13 @@ Install the SANE OSX drivers
 
 You need to go through the install wizard for each of these. Faster scans are worth it though!
 
-Test your drivers
+**2. Test your drivers**
 
   1. Open Digital Images
   2. Select *Edit -> Import From Scanner... -> SANE*
   3. Scan something. If it works, your drivers are set up properly
 
-Install BcScan
+**3. Install BcScan**
 
   1. [Download BcScan.dmg](BcScan.dmg?raw=true) and open it
   2. Drag the BcScan app to your Programs folder
